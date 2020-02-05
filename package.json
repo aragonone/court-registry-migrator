@@ -1,0 +1,32 @@
+{
+  "name": "@aragonone/court-registry-migrator",
+  "version": "1.0.0",
+  "description": "Aragon Court jurors registry migrator",
+  "author": "Aragon ONE",
+  "license": "GPL-3.0",
+  "files": [
+    "/abi",
+    "/build",
+    "/contracts",
+    "/scripts",
+    "/test"
+  ],
+  "scripts": {
+    "compile": "truffle compile",
+    "lint": "solium --dir ./contracts",
+    "test": "./node_modules/@aragon/test-helpers/ganache-cli.sh",
+    "abi:extract": "truffle-extract --output abi/ --keys abi",
+    "prepublishOnly": "truffle compile --all && npm run abi:extract -- --no-compile"
+  },
+  "dependencies": {
+    "@aragon/court": "1.1.0"
+  },
+  "devDependencies": {
+    "@aragon/test-helpers": "^2.1.0",
+    "@aragon/truffle-config-v5": "^1.0.0",
+    "ganache-cli": "^6.4.5",
+    "solium": "^1.2.3",
+    "truffle": "^5.0.34",
+    "truffle-extract": "^1.2.1"
+  }
+}

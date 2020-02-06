@@ -46,7 +46,26 @@ contract JurorsRegistryMigrator is IDisputeManager {
         newRegistry = _newRegistry;
     }
 
+    function migrate(address[] calldata _jurors) external {
+        for (uint256 i = 0; i < _jurors.length; i++) {
+            _migrate(_jurors[i]);
+        }
+    }
+
     function migrate(address _juror) external {
+        _migrate(_juror);
+    }
+
+    function close() external onlyFundsGovernor {
+        uint256 balance = token.balanceOf(address(this));
+        emit MigrationClosed(balance);
+
+        if (balance > 0) {
+            require(token.transfer(address(oldRegistry), balance), ERROR_CLOSE_TRANSFER_FAILED);
+        }
+    }
+
+    function _migrate(address _juror) internal {
         // Note that this migration will only work for the precedence campaign
         // This is, jurors that activated tokens during term 0 becoming active on term 1
         uint256 balanceToBeMigrated = oldRegistry.activeBalanceOfAt(_juror, FIRST_TERM);
@@ -58,12 +77,6 @@ contract JurorsRegistryMigrator is IDisputeManager {
 
         require(token.approve(address(newRegistry), balanceToBeMigrated), ERROR_ANJ_APPROVAL_FAILED);
         newRegistry.stakeFor(_juror, balanceToBeMigrated, abi.encodePacked(ACTIVATE_DATA));
-    }
-
-    function close() external onlyFundsGovernor {
-        uint256 balance = token.balanceOf(address(this));
-        require(token.transfer(address(oldRegistry), balance), ERROR_CLOSE_TRANSFER_FAILED);
-        emit MigrationClosed(balance);
     }
 
     /** DISPUTE MANAGER METHODS **/

@@ -100,7 +100,7 @@ contract('JurorsRegistryMigrator', ([_, modulesGovernor, configGovernor, fundsGo
     for (const juror of jurors) {
       const receipt = await migrator.migrate(juror.address)
 
-      assert.isAtMost(receipt.receipt.gasUsed, 275e3)
+      assert.isAtMost(receipt.receipt.gasUsed, 277e3)
       assertAmountOfEvents(receipt, 'TokensMigrated')
       assertEvent(receipt, 'TokensMigrated', { juror: juror.address, amount: juror.initialActiveBalance })
 

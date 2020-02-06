@@ -7,8 +7,6 @@ import "@aragon/court/contracts/court/controller/Controlled.sol";
 
 
 contract JurorsRegistryMigrator is IDisputeManager {
-    uint64 constant internal ZERO_TERM = 0;
-    uint64 constant internal FIRST_TERM = 1;
     bytes32 constant internal ACTIVATE_DATA = keccak256("activate(uint256)");
 
     string constant internal ERROR_TOKEN_DOES_NOT_MATCH = "JRM_TOKEN_DOES_NOT_MATCH";
@@ -20,6 +18,7 @@ contract JurorsRegistryMigrator is IDisputeManager {
     string constant internal ERROR_SENDER_NOT_FUNDS_GOVERNOR = "JRM_SENDER_NOT_FUNDS_GOVERNOR";
 
     ERC20 public token;
+    uint64 public termId;
     JurorsRegistry public oldRegistry;
     JurorsRegistry public newRegistry;
     mapping (address => uint256) internal migrations;
@@ -37,23 +36,26 @@ contract JurorsRegistryMigrator is IDisputeManager {
     constructor (JurorsRegistry _oldRegistry, JurorsRegistry _newRegistry) public {
         address oldRegistryToken = _oldRegistry.token();
         address newRegistryToken = _newRegistry.token();
-
         require(oldRegistryToken == newRegistryToken, ERROR_TOKEN_DOES_NOT_MATCH);
-        require(_oldRegistry.getController() == _newRegistry.getController(), ERROR_CONTROLLER_DOES_NOT_MATCH);
+
+        Controller oldRegistryController = _oldRegistry.getController();
+        Controller newRegistryController = _newRegistry.getController();
+        require(oldRegistryController == newRegistryController, ERROR_CONTROLLER_DOES_NOT_MATCH);
 
         token = ERC20(oldRegistryToken);
         oldRegistry = _oldRegistry;
         newRegistry = _newRegistry;
+        termId = oldRegistryController.getCurrentTermId();
     }
 
     function migrate(address[] calldata _jurors) external {
         for (uint256 i = 0; i < _jurors.length; i++) {
-            _migrate(_jurors[i]);
+            _migrate(_jurors[i], termId);
         }
     }
 
     function migrate(address _juror) external {
-        _migrate(_juror);
+        _migrate(_juror, termId);
     }
 
     function close() external onlyFundsGovernor {
@@ -65,14 +67,12 @@ contract JurorsRegistryMigrator is IDisputeManager {
         }
     }
 
-    function _migrate(address _juror) internal {
-        // Note that this migration will only work for the precedence campaign
-        // This is, jurors that activated tokens during term 0 becoming active on term 1
-        uint256 balanceToBeMigrated = oldRegistry.activeBalanceOfAt(_juror, FIRST_TERM);
+    function _migrate(address _juror, uint64 _currentTerm) internal {
+        uint256 balanceToBeMigrated = oldRegistry.activeBalanceOfAt(_juror, _currentTerm + 1);
         require(balanceToBeMigrated > 0, ERROR_BALANCE_TO_MIGRATE_ZERO);
 
         // Note that we are forcing the tokens collection to occur on term 0, which means the tree will be cleaned for term 1
-        oldRegistry.collectTokens(_juror, balanceToBeMigrated, ZERO_TERM);
+        oldRegistry.collectTokens(_juror, balanceToBeMigrated, _currentTerm);
         emit TokensMigrated(_juror, balanceToBeMigrated);
 
         require(token.approve(address(newRegistry), balanceToBeMigrated), ERROR_ANJ_APPROVAL_FAILED);

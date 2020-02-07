@@ -8,7 +8,7 @@ const JurorsRegistry = artifacts.require('JurorsRegistry')
 const Migrator = artifacts.require('JurorsRegistryMigrator')
 const ERC20 = artifacts.require('ERC20Mock')
 
-contract('JurorsRegistryMigrator', ([_, modulesGovernor, configGovernor, fundsGovernor, juror10000, juror50000, juror35123, onlyStakedJuror200, deactivationJuror20000, newJuror]) => {
+contract('JurorsRegistryMigrator', ([_, modulesGovernor, configGovernor, fundsGovernor, juror10000, juror50000, juror35123, onlyStakedJuror200, halfDeactivationJuror10000, fullDeactivationJuror20000, newJuror100000]) => {
   let courtHelper, controller, oldJurorsRegistry, newJurorsRegistry, disputeManager, migrator, token
 
   const jurors = [
@@ -19,17 +19,20 @@ contract('JurorsRegistryMigrator', ([_, modulesGovernor, configGovernor, fundsGo
 
   const allJurors = [
     ...jurors,
-    { address: deactivationJuror20000, initialActiveBalance: bigExp(20000, 18) },
+    { address: halfDeactivationJuror10000, initialActiveBalance: bigExp(10000, 18) },
+    { address: fullDeactivationJuror20000, initialActiveBalance: bigExp(20000, 18) },
   ]
 
   const ZERO_TERM = 0
   const FIRST_TERM = 1
-  const SECOND_TERM = 2
 
   const STAKED_BALANCE = bigExp(200, 18)
-  const ACTIVE_BALANCE = bigExp(95123, 18)
-  const DEACTIVATION_BALANCE = bigExp(20000, 18)
+  const ACTIVE_BALANCE = bigExp(100123, 18)
+  const DEACTIVATION_BALANCE = bigExp(25000, 18)
   const TOTAL_BALANCE = STAKED_BALANCE.add(ACTIVE_BALANCE).add(DEACTIVATION_BALANCE)
+
+  const NEW_ACTIVE_BALANCE = bigExp(100000, 18)
+  const NEW_TOTAL_ACTIVE_BALANCE = ACTIVE_BALANCE.add(NEW_ACTIVE_BALANCE)
 
   const EXPECTED_GAS_USED_PER_MIGRATION = 290e3
 
@@ -57,10 +60,13 @@ contract('JurorsRegistryMigrator', ([_, modulesGovernor, configGovernor, fundsGo
     }
   })
 
-  before('request a deactivation', async () => {
-    const juror = allJurors[allJurors.length - 1]
-    await oldJurorsRegistry.deactivate(0, { from: juror.address })
-    await assertBalance(juror.address, oldJurorsRegistry, { active: 0, pendingDeactivation: juror.initialActiveBalance })
+  before('request deactivations', async () => {
+    await oldJurorsRegistry.deactivate(0, { from: fullDeactivationJuror20000 })
+    await assertBalance(fullDeactivationJuror20000, oldJurorsRegistry, { active: 0, pendingDeactivation: bigExp(20000, 18) })
+
+    const balance = bigExp(5000, 18)
+    await oldJurorsRegistry.deactivate(balance, { from: halfDeactivationJuror10000 })
+    await assertBalance(halfDeactivationJuror10000, oldJurorsRegistry, { active: balance, pendingDeactivation: balance })
   })
 
   before('stake some tokens', async () => {
@@ -99,32 +105,42 @@ contract('JurorsRegistryMigrator', ([_, modulesGovernor, configGovernor, fundsGo
     })
 
     it('is possible to activate new jurors on the new registry', async () => {
-      const newBalance = bigExp(100000, 18)
-      await courtHelper.activate([{ address: newJuror, initialActiveBalance: newBalance}])
+      await courtHelper.activate([{ address: newJuror100000, initialActiveBalance: NEW_ACTIVE_BALANCE}])
 
       assertBn(await token.balanceOf(oldJurorsRegistry.address), 0, 'old registry should not hold any balances')
-      assertBn(await token.balanceOf(newJurorsRegistry.address), newBalance, 'new registry should hold new active balances')
+      assertBn(await token.balanceOf(newJurorsRegistry.address), NEW_ACTIVE_BALANCE, 'new registry should hold new active balances')
       assertBn(await token.balanceOf(migrator.address), TOTAL_BALANCE, 'migrator should hold all the old registry balances')
 
-      await assertBalance(newJuror, newJurorsRegistry, { active: newBalance })
+      await assertBalance(newJuror100000, newJurorsRegistry, { active: NEW_ACTIVE_BALANCE })
     })
 
     it('migrates active balances', async () => {
-      const previousNewRegistryBalance = await token.balanceOf(newJurorsRegistry.address)
+      const receipt = await migrator.methods['migrate(address[])'](jurors.map(juror => juror.address))
+      assertAmountOfEvents(receipt, 'TokensMigrated', jurors.length)
 
-      for (const juror of jurors) {
-        const receipt = await migrator.migrate(juror.address)
-
-        assert.isAtMost(receipt.receipt.gasUsed, EXPECTED_GAS_USED_PER_MIGRATION)
-        assertAmountOfEvents(receipt, 'TokensMigrated')
-        assertEvent(receipt, 'TokensMigrated', { juror: juror.address, amount: juror.initialActiveBalance })
-
+      for (let i = 0; i < jurors.length; i++) {
+        const juror = jurors[i]
+        assertEvent(receipt, 'TokensMigrated', { juror: juror.address, amount: juror.initialActiveBalance }, i)
         await assertBalance(juror.address, oldJurorsRegistry, { active: 0 }, FIRST_TERM)
-        await assertBalance(juror.address, newJurorsRegistry, { active: juror.initialActiveBalance }, SECOND_TERM)
+        await assertBalance(juror.address, newJurorsRegistry, { active: juror.initialActiveBalance }, FIRST_TERM)
       }
+    })
 
+    it('migrates active balances with partial deactivation', async () => {
+      const balance = bigExp(5000, 18)
+      const receipt = await migrator.migrate(halfDeactivationJuror10000)
+
+      assert.isAtMost(receipt.receipt.gasUsed, EXPECTED_GAS_USED_PER_MIGRATION)
+      assertAmountOfEvents(receipt, 'TokensMigrated')
+      assertEvent(receipt, 'TokensMigrated', { juror: halfDeactivationJuror10000, amount: balance })
+
+      await assertBalance(halfDeactivationJuror10000, oldJurorsRegistry, { active: 0, pendingDeactivation: balance }, FIRST_TERM)
+      await assertBalance(halfDeactivationJuror10000, newJurorsRegistry, { active: balance, pendingDeactivation: 0 }, FIRST_TERM)
+    })
+
+    it('migrates all the balances correctly', async () => {
       assertBn(await token.balanceOf(oldJurorsRegistry.address), 0, 'old registry should not hold any balances')
-      assertBn(await token.balanceOf(newJurorsRegistry.address), ACTIVE_BALANCE.add(previousNewRegistryBalance), 'new registry should hold active balances')
+      assertBn(await token.balanceOf(newJurorsRegistry.address), NEW_TOTAL_ACTIVE_BALANCE, 'new registry should hold active balances')
       assertBn(await token.balanceOf(migrator.address), STAKED_BALANCE.add(DEACTIVATION_BALANCE), 'migrator should hold only-staked balances')
     })
 
@@ -189,15 +205,26 @@ contract('JurorsRegistryMigrator', ([_, modulesGovernor, configGovernor, fundsGo
       await assertBalance(onlyStakedJuror200, newJurorsRegistry, { available: balance })
     })
 
-    it('allows deactivation jurors to migrate their tokens manually', async () => {
-      const balance = await oldJurorsRegistry.totalStakedFor(deactivationJuror20000)
+    it('allows partial-deactivated jurors to migrate their tokens manually', async () => {
+      const balance = await oldJurorsRegistry.totalStakedFor(halfDeactivationJuror10000)
 
-      await oldJurorsRegistry.processDeactivationRequest(deactivationJuror20000)
-      await oldJurorsRegistry.unstake(balance, '0x', { from: deactivationJuror20000 })
-      await token.approveAndCall(newJurorsRegistry.address, balance, '0x', { from: deactivationJuror20000 })
-      
-      await assertBalance(deactivationJuror20000, oldJurorsRegistry, { active: 0, available: 0, pendingDeactivation: 0 })
-      await assertBalance(deactivationJuror20000, newJurorsRegistry, { available: balance })
+      await oldJurorsRegistry.processDeactivationRequest(halfDeactivationJuror10000)
+      await oldJurorsRegistry.unstake(balance, '0x', { from: halfDeactivationJuror10000 })
+      await token.approveAndCall(newJurorsRegistry.address, balance, '0x', { from: halfDeactivationJuror10000 })
+
+      await assertBalance(halfDeactivationJuror10000, oldJurorsRegistry, { active: 0, available: 0, pendingDeactivation: 0 })
+      await assertBalance(halfDeactivationJuror10000, newJurorsRegistry, { available: balance, active: balance })
+    })
+
+    it('allows full-deactivated jurors to migrate their tokens manually', async () => {
+      const balance = await oldJurorsRegistry.totalStakedFor(fullDeactivationJuror20000)
+
+      await oldJurorsRegistry.processDeactivationRequest(fullDeactivationJuror20000)
+      await oldJurorsRegistry.unstake(balance, '0x', { from: fullDeactivationJuror20000 })
+      await token.approveAndCall(newJurorsRegistry.address, balance, '0x', { from: fullDeactivationJuror20000 })
+
+      await assertBalance(fullDeactivationJuror20000, oldJurorsRegistry, { active: 0, available: 0, pendingDeactivation: 0 })
+      await assertBalance(fullDeactivationJuror20000, newJurorsRegistry, { available: balance })
     })
   })
 })

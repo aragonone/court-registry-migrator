@@ -7,27 +7,25 @@ import "@aragon/court/contracts/court/controller/Controlled.sol";
 
 
 contract JurorsRegistryMigrator is IDisputeManager {
-    bytes32 constant internal ACTIVATE_DATA = keccak256("activate(uint256)");
-
     string constant internal ERROR_TOKEN_DOES_NOT_MATCH = "JRM_TOKEN_DOES_NOT_MATCH";
     string constant internal ERROR_CONTROLLER_DOES_NOT_MATCH = "JRM_CONTROLLER_DOES_NOT_MATCH";
     string constant internal ERROR_BALANCE_TO_MIGRATE_ZERO = "JRM_BALANCE_TO_MIGRATE_ZERO";
     string constant internal ERROR_ANJ_APPROVAL_FAILED = "JRM_ANJ_APPROVAL_FAILED";
     string constant internal ERROR_MIGRATION_IN_PROGRESS = "JRM_MIGRATION_IN_PROGRESS";
     string constant internal ERROR_CLOSE_TRANSFER_FAILED = "JRM_CLOSE_TRANSFER_FAILED";
+    string constant internal ERROR_COURT_TERM_HAS_PASSED = "JRM_COURT_TERM_HAS_PASSED";
     string constant internal ERROR_SENDER_NOT_FUNDS_GOVERNOR = "JRM_SENDER_NOT_FUNDS_GOVERNOR";
 
     ERC20 public token;
     uint64 public termId;
+    Controller public controller;
     JurorsRegistry public oldRegistry;
     JurorsRegistry public newRegistry;
-    mapping (address => uint256) internal migrations;
 
     event TokensMigrated(address indexed juror, uint256 amount);
     event MigrationClosed(uint256 amount);
 
     modifier onlyFundsGovernor() {
-        Controller controller = newRegistry.getController();
         address fundsGovernor = controller.getFundsGovernor();
         require(fundsGovernor == msg.sender, ERROR_SENDER_NOT_FUNDS_GOVERNOR);
         _;
@@ -45,17 +43,21 @@ contract JurorsRegistryMigrator is IDisputeManager {
         token = ERC20(oldRegistryToken);
         oldRegistry = _oldRegistry;
         newRegistry = _newRegistry;
+        controller = oldRegistryController;
         termId = oldRegistryController.getCurrentTermId();
     }
 
     function migrate(address[] calldata _jurors) external {
+        uint64 currentTermId = _ensureMigrationTerm();
+
         for (uint256 i = 0; i < _jurors.length; i++) {
-            _migrate(_jurors[i], termId);
+            _migrate(_jurors[i], currentTermId);
         }
     }
 
     function migrate(address _juror) external {
-        _migrate(_juror, termId);
+        uint64 currentTermId = _ensureMigrationTerm();
+        _migrate(_juror, currentTermId);
     }
 
     function close() external onlyFundsGovernor {
@@ -67,19 +69,25 @@ contract JurorsRegistryMigrator is IDisputeManager {
         }
     }
 
-    function _migrate(address _juror, uint64 _currentTerm) internal {
-        uint256 balanceToBeMigrated = oldRegistry.activeBalanceOfAt(_juror, _currentTerm + 1);
+    function _migrate(address _juror, uint64 _currentTermId) internal {
+        uint256 balanceToBeMigrated = oldRegistry.activeBalanceOfAt(_juror, _currentTermId + 1);
         require(balanceToBeMigrated > 0, ERROR_BALANCE_TO_MIGRATE_ZERO);
 
-        // Note that we are forcing the tokens collection to occur on term 0, which means the tree will be cleaned for term 1
-        oldRegistry.collectTokens(_juror, balanceToBeMigrated, _currentTerm);
-        emit TokensMigrated(_juror, balanceToBeMigrated);
-
+        oldRegistry.collectTokens(_juror, balanceToBeMigrated, _currentTermId);
         require(token.approve(address(newRegistry), balanceToBeMigrated), ERROR_ANJ_APPROVAL_FAILED);
-        newRegistry.stakeFor(_juror, balanceToBeMigrated, abi.encodePacked(ACTIVATE_DATA));
+        newRegistry.stakeFor(_juror, balanceToBeMigrated, abi.encodePacked(keccak256("activate(uint256)")));
+
+        emit TokensMigrated(_juror, balanceToBeMigrated);
+    }
+
+    function _ensureMigrationTerm() internal view returns (uint64) {
+        uint64 currentTerm = controller.getCurrentTermId();
+        require(termId == currentTerm, ERROR_COURT_TERM_HAS_PASSED);
+        return currentTerm;
     }
 
     /** DISPUTE MANAGER METHODS **/
+    // solium-disable function-order
 
     function createDispute(IArbitrable /* _subject */, uint8 /* _possibleRulings */, bytes calldata /* _metadata */) external returns (uint256) {
         revert(ERROR_MIGRATION_IN_PROGRESS);

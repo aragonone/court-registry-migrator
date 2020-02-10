@@ -1,0 +1,1735 @@
+{
+  "data": {
+    "jurors": [
+      {
+        "activeBalance": "90000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x00077ed00b42c42acbafa13e139d3b4e5d60daee",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "400500000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x003dc32fe920a4aaeed12dc87e145f030aa753f3",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "12641231302000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x00b591bc2b682a0b30dd72bac9406bfa13e5d3cd",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "11000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x00d18ca9782be1caef611017c2fbc1a39779a57c",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10232789145854624047400",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x010afb8548a5d1a3a3d62f58ca0a5a1329974206",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "20018821927762128646900",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x01704865b3404391ea00137c4bb00855515df802",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x03000a0ecb1898040c26cd418570cd480775f0da",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "16854791597376307055000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x047b9a90e5b2b9fa1bd9b69d45d48c7924246109",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "27000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x04c1cef0dd799ce1dc541febf4d0cbe290402d28",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "32645000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x04fa5c3869ded7d00f36f13597a2f46aee4c9220",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "50000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x0623b91e3e1f5472e0ab11163e416c5081f40a5b",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10500000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x0717ebe2129bca4df964f10f198f343952b2e552",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "100000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x08010f20a6b415ba2bb8e684198c845710263d0a",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "19600000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x0993fb5b078658de9e8a3e1c75661122f2236795",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "26861578316171926417100",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x0a3bfd31570df77c243379606ef1fca7ddd2ec74",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x0b02b9bbf234026c8a57db8b1911f1bb44d01236",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "102570000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x0b0e3ebe78b965bd0ae25a7c5c1cc8cff23a07e7",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10077688782194023860800",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x0cb0f554a2e8a5b7b5634f37840b037214925815",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x0d57d339d36cd816a1623f68bc8c402db781acca",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10870000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x0db4f8aa9ae67be51c89f37d6b3038cf16aca8c7",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "13400000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x0ea18c95d601c8999fb9999f67d38da59d066d89",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x112763a028d6de3750dfb97d81e1f965015de822",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "50000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x129631915a3ca10b9a159a7dc95bde0ba71682d3",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x12a0e25e62c1dbd32e505446062b26aecb65f028",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "44900000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x15b7fec273f6f09786ae3efc6e0aa9ea33f56508",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10699672222000000204800",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x164767126f2570a427e3c2f34da27003f8394a40",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "110000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x16f8da66848477c0c10b78c07d7397a93daf11ae",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "100000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x1777780e0f5bb308b3d99185036965c0739590ee",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "25000000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x1786727d7e5f93cb4bda4d13c6bfc32446ef1a8b",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x197a78fe1bd3bbb64c1325c027bde8f67bac1770",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10826504955918941379000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x19a326553330e8b36aa68b5928aa9597d6bfc0db",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "11000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x19a781c1fc8eb677d753e9f7be13c6fab2faa5ff",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "100000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x1a3e98369a9e935d5e807514fd479ebf075863c6",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x1a9cee6e1d21c3c09fb83a980ea54299f01920cd",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x1b158330eb18839f50649f4cb8f49954214866a3",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "369980772214000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x1b3f8c61f726330d4ae983c30a437f41ce5b40a0",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x23db400dddc21ea44dd57408d9fa50e6bc3ff25e",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x248995eab7065ef411c6c259c98564b84e8c7a45",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10157149785723855292300",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x24d0db7e182fcd29ddea14c04bcb182c89cbb0c0",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "20500000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x252102c08117fbad6cad22df14faa982a68226cf",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x275c102f2a85a831e16319d9c835514d64986e19",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "100000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x27970d7f5e4241fa3e79eefcfcd302c60b8ff0d5",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "100000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x282173335ae1f328b34eb9acadc052e59e70a89f",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "600000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x2a3b4986cb64bd5e4c6484282fb896fbe60b4e28",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "100000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x2ad90658737cd1e324401de09f41ba104c34b959",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "29862438000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x2b0726c7c1dbc6e99d890e5be92945a48991a704",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "12624378151599375996700",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x2bf6ea2b7f844c7d7a017e4ba3de526a54687641",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x2ca83c5383f86f466ea17a459407f82fbd51b804",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "11000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x2d9792dcf111976f59c68a96377bfb427d51af03",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10500000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x2e799719c450d514b95997c457127603f728058c",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "12000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x30f1776cb68f5a374371cbef69d43fa83e5c42e4",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "171798781593350191914300",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x310d5c8ee1512d5092ee4377061ae82e48973689",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "99900000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x3398f1c5f54ea76ef7fd00fb47f83aa009ec21ad",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10100000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x361581209fc3b3c283a7e828d57a8ba5323c5420",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "15500000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x370a5275f69cb3c2e76cfe575cf7f846f906b34d",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "5000000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x370ceca4fc1287ed99924bba76259f6c771a6022",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "12790550000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x3839acf1ee7699d1f46b1be840d8ad8317fdf757",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "500000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x3867b3d92126a3ce136cd119b5ec818e9550259d",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "11111111111111111111100",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x3a0e6b374fcc051172ab4fcc3599f245bbaf02a2",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "20000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x3d1d397acd3b0989d9e633d6dbf7e6f8f5c03a2d",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "25744464861362521566500",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x3e0cf03f718520f30300266dcf4db50ba12d3331",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "40000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x4059457092cc3812d56676df6a75fd21204fbe2f",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "50000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x43b8e7de8212e6e1a4954405b665d482da1289bd",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "400000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x45044e1ca0959ec04b92d5118b6baebfd732ae64",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "410154910344121539238500",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x4560a9f2fd9253eb7017258c5a347bcc21dd795b",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x45ab2626b456a5f005f82ce721af5f5fda8aaef4",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "580000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x463db26f8dc700ba135b9d30435a5ab0da303768",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "135000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x46761f1d443531afc94080e9f93d7aad7c75ae87",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "2000000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x4771554ad18b2c9cf17ca70177b9d2715932c3b5",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "12000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x486eaab71360a0e7bade22509a86815b1a2eada2",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "200000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x4941105e6d11cff9be097a837cb68091f59a029c",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10204637257529619302000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x49473ba2ff6bd613bc6a226c126b5ae8e28bab6f",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "576800000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x4ac5ed4b31f4f0e16bd96bf2d9f96200d7c266af",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "54975052091579060965200",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x4ada1b9d9fe28abd9585f58cfeed2169a39e1c6b",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "195210553906000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x4bffff6300a7f01b0841b0ace966085f39af6cb3",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x4c4d2ac40721aa756970401d57af0e237a3fd607",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10500000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x4d65151cd05f43f9acbedbe4182b02445a93d7cf",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "25375821846372333684300",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x4f50d47d20380172746527bbeaa274940c38efac",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "254342034958547316883400",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x50d271519510c55b15408c2c6aeed69800694ef4",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "150000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x5140c2e3be04d48e9b7c5fdf016bbea6a88b2b65",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x51b3a21c89292e3b1e4be7659be7c435035a972f",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10465959378870471445500",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x530922b450b77e365c4249a65c784ccfe770dd6a",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "12897757720044009469500",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x534aeff4e54c1e6ee8cfd95ce547abd00d637b00",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10500000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x53df8e5a01a8e1b40ba27609ae749fb60f31b607",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "558233887394929295340500",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x543dd7aab977db9acc05a84058bfb957b1275f95",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "182100000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x54411028b577177c95d0f1113a946b304cbe9d3e",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "20000763958276784002300",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x56d037d72acdbf7c43b5addb6e5c8327f9ac00cc",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "16751633943984979693500",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x5790db5e4d9e868bb86f5280926b9838758234dd",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10262679432096522247200",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x57a0d3f04500d04151f55efbe69f762d2f2b371a",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "34378935441443683232500",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x57c2570f1a4228a3aeff4fe533826c2a04a2d52f",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "14000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x57f908c42f5a0e5dbbd3c35a137cc242cf89add6",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "20100000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x583da21ad0c1171ae4b6cf24d92c46f033a0a794",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x58dbb844bbf2f062a4888eef5080362163d5ab54",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10370000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x59207cfeda73d3b9cb297d187446c7189d8e2bdc",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "381912599475185472013400",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x5959c30858aa146ec113e98adba605eb4c99b27c",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "195000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x5a1db41b56dddba9716900d222b22f71d1ae120e",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "53346317000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x5b93ff82faaf241c15997ea3975419dddd8362c5",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "31403096697364442331200",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x5c0ac266833e36e98edb52070bcea5be6c1145c6",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "325000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x5d509f653d7e4914af9da434bf25c53cd122763d",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "11000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x5df0faf9411f5dbb64231457df54e5d51ea0b44f",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "11337230000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x5eecd33c915a1836dcf31954b0ef2aa664a8b6a8",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "150000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x5fc34db0475e309698d3fc9be9ee2442283eb509",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "1000000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x617392bb7094209b50ca1a786c95319d748d35b4",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "25791865717989003314800",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x64219b01c2049d942fc8a7a43c7877f5473903d1",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x6543c99d0e073c140fd08a741c6cfdcd1449da94",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "400000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x65d25e3f2696b73b850daa07dd1e267dcfa67f2d",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10464917194894102217600",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x675747d3dffd8e0fec7a56b27723c52ad479f090",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "50000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x683a42e5b414ae5cf79ece7e369ca5937fdcdc11",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "11000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x68575571e75d2cfa4222e0f8e7053f056eb91d6c",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "116500000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x6864d15cf60095395b771b2f88a02808e28b4ff3",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "34741639346967919084500",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x68d36dcbdd7bbf206e27134f28103abe7cf972df",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "16400000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x692603675b46fa65061853db373057208f476815",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "11500000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x6a35ff99c8105c0dd35d74e3aad2000988e3dae1",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "69891900000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x6a6c8e7cc316556d6da1e4655d814aedbdeda1d0",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "12345851900000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x6a983e653d6d7c81fbd29dd7cc638b6f36242d08",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "14837556017908377694900",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x6b44862103b8a45f5ec701b69ec28a5d6d304950",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "15000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x6b817156a65615f01949eae47cc66f2a1f2f2e7d",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "150228149213018573086800",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x6bce4f3ad3a9b9e98982e94da3352c94d06dfcb1",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "2000000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x6df927e5555eaac1aa90994a2906a7b916fff4d8",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10300000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x6e14e589477aa08d139d55a871535c0579b1bb84",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "25000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x73e60cd967e957bc6e074f93320ffa1d52697d5b",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "21000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x73ed012d0eff87f13cb0a9b789b84a6d720b01fc",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "20000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x74095e5ecc82cafa9e4ed23139c22c658337ff5f",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "11000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x745670eb3e4bd31ffd8b191b73918b4572150a7b",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "12000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x74d2e9655506622afcb37410e929f60d55af536c",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "37344083458000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x75a54e70414ab502b27a55da3abda45fcc35b833",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "50000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x75b98710d5995ab9992f02492b7568b43133161d",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "20194280000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x76e10dc545152ce445a3023eae105c5966fad41a",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "600000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x78a55bcd131f06d53c756c1707ebf9903bad43cb",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10870000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x79e7657e956560471cf76339a02d124610834d67",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "9902375000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x7a0d32cdd4511956d7c751a7bb7beace2321e17d",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "12663644066761555568400",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x7d1c6e4a9150d49b9d31c35332c854c9045d1af5",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10229835154234522887600",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x7e9eade6d1e92e395cbf12919421a501ff0e7a05",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "20000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x7eac94ecd60738ebce2baa48004e31e69481a837",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "20000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x84ad2835b4d23a147e6f735bd017001376cb8192",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "117587112093123668387500",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x85a363699c6864248a6ffca66e4a1a5ccf9f5567",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "57000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x85b609b3d27d27e5b9a9c4665a76ad3288525b60",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x865c2f85c9fea1c6ac7f53de07554d68cb92ed88",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "122189630000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x87f1c88e6f6118e315d9bdd5b40a08b9e3507452",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "359958036381638600738300",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x8823fb20f9ab02a62c6aaa1e7d3a0ecbd3ed4968",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "1216176000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x88f9b745fbf483a5b8c2723e6f63e07b59f76b32",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "80000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x8a57836c16f1d7d7d6756f19c415fd38239d16a6",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "57726659719000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x8a9bcdc68d19e111663d6c986caf1da1eda1c304",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "30000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x8be8a44943861279377a693b51c0703420087480",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "30000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x8d138c01765483cb79d787ce5933f609cbfdabcf",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x8eb53c061237fbb7565b396c6cd90b0ea630dc2e",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x8ebb917fec8c6fac97a13e92d9198def41b5475e",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "11000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x902fce0d5da95620344363d5d5df60591fb6ba17",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "13884000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x91d6e260a5965a3c33d5bc4bf4adcf96c449ed2e",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "11552000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x930ad86e4f3e79c101cc71b03145e376e5bb618f",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "40000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x95715f56d9faf221a848ca6da11bc603c53dc95e",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "24000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x96559b33d6a9042b1c34b3e8978ca922146cb79a",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "250133000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x96b28c34a001a19ef618d4159623dad68429e376",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "11000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x9a94ac82b17e67f7dff81912de68eb74ca20e6c3",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "4500000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x9ab0b3323b1c9035b90ca4f1e462bb72c5417503",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10100000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x9c266da6b2aac6829707127d36ec7bf82e387b73",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x9d31e30003f253563ff108bc60b16fdf2c93abb5",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "15471000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x9dbd1eaba4c15608910c833232784eb8f0f74c85",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "172255000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x9e5cdd0f62d991dc52214a88fb5664a455673999",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0x9f5cfc8b8108b0575ed3445a9f27d92e60f509cd",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "15000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xa0f939965e18e969ddabab056e81dae2e2e7df4d",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xa1d4c9e0a46068afa3d8424b0618218bf85ccaaa",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10054229494000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xa23e34ddad8c312ed86bcafc0089dfa23ffd2bb9",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "77705411061911670721900",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xa270697a7e1cae9f5a8584adc36f7de94702644c",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "507826969379826651835500",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xa2ff68f63a3882dd004e546fa3fe1f19d44f0f8b",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10500000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xa543a0ca0cfc98bbffb3ef1f54885a560416453e",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "30000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xa5da57311bc233b112ab817c732804d2a4c0297c",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10032259568843728133700",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xa691be7fc5cda46c9291bb38da447ef077c11fd6",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "40000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xa730f0255f61e54f999852afb1783a77aaf9ee15",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "494600000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xa7a13659692239c143dae313a0116d5b5c18d26c",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "20000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xa8e36b688ec3741e18d4f9f3afbfa7f0f9f0662a",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "100000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xaa01dec5307cf17f20881a3286dcaa062578cea7",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "29152343768071920689800",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xaa679e4ee126f49c4c7e06bffae0f64562e74deb",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "15000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xabf1f75ac015738d78c591827ba08cdf955e7e16",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "180000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xad2dcb058f10b4e11611f9c1fc0aa1a532e270d6",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "20000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xaecce32486bf8f657dd9ae4627048de1a72c41a5",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "200000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xb0e83c2d71a991017e0116d58c5765abc57384af",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "628247634765232318263400",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xb24b54fe5a3adcb4cb3b27d31b6c7f7e9f6a73a7",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "50000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xb2d60143097b4f992bfbe955a22dbb2acd9a8eab",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10500000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xb3b1cf4a37a5ad7a3cea9d5b652ab106c9576b8a",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xb3e1b74963301d2ebd72eceae539007c3aff3424",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10649678710717981994000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xb3e951d799269f96f82175d04cce4fc6d867e1e8",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xb476a9ea9376b04972b40b40a4ca91d3e5f964a7",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "480408711001000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xb62e27446079c2f2575c79274cd905bf1e1e4edb",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "100000000086966400924400",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xb71d05cf5cdf7a9b15b20b9aab5e91332c271c96",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "25000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xb884fba07e1249f86e7dfab919d8967b652c1f0b",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "11000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xba9c9054dc0c220c604d2ea48d4a908a0feb9db4",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xbac3919c732e1c0aee6b8d6149a1e773bca12b86",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "30173226226455100089300",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xbd83d7010240c00003fada816306e9fa72ba189e",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xbe16892ed5185cbd69f3f2708de5263645240a65",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "301975760000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xbfa43bf6e9fb6d5cc253ff23c31f2b86a739bb98",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10200000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xc2e54a32f85bc99fd1e6de09b7c8a3124018e238",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "19927251300299933531700",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xc5aa216ab58291b7cfe9be87c0e46917de032907",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "13729535649766920417500",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xc6d7aaa9974c3bd646da01eecb4b21e174906343",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xc7f91d9f1a2609c89d600bacf38a21f09e77ddd8",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "12000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xc7fb0469194add5cbafce6e05004fa7b472c2754",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "20000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xca65fd88c2d0b4a012f38c6677f45bbc4186acf5",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "86867305554358396119400",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xcae687969d3a6c4649d114b1c768d5b1deae547b",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10500000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xcaf6a42ec6e3574de56c690bbbc42aa898058bf2",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "84740000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xcb3df0eaadb4c9c5ba0f1d90f8dbd3b70ff335f2",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "12649434399000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xd11d51355e239d822e6fa3a1623ee0024b567284",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xd2091c6c80d659f4a0362c66fc7a9bc121241d4c",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xd26e2457e82faae2689d1db58883b7472669cd63",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "500000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xd472fa32294977196b9ad47e7865e0d737220e32",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "12387000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xd6968f1e9c93e23d56cb406531b623374bc4b425",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "12500000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xd6eb449e39a260dd2c17d08147482e43ed770e53",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xd6f5646d9e7fbee7cc907eb8e12dafa5378431e6",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "267168963314000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xd76bf0a6b97de91743647b27fe4e446c4c67039a",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "11000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xdb89f642e287175b6139372899178624719871ea",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "50075149676228538325400",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xdc2adfa800a1ffa16078ef8c1f251d50dcda1065",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "22150725453311835452200",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xdd7c40ad9dd3ba5708e3cc6deb90fcfc37933e09",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "50000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xddc674c29f2b34fc2338b719c0ae711b063eeadb",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "110900000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xdf003e28fccdeca0e032d2235659f7c0a3156896",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "34000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xdf8f53b9f83e611e1154402992c6f6cb7daf246c",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "62870000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xe09eb363b20e7b96b3d7f4e79bc286082cc531b7",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "100000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xe0b68035224335ad7c7a4b085b55e3a84f3e2ac9",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xe100d88646a57a13ac803fdf4607511cefa39aa5",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xe147d7af5cf810d839a12861d8d586827d0d53f3",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "553452277015000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xe164644e1e8bb14ba8aa19be1b78ec6cf22f7ca8",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "15000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xe34e2df841e5a6352b0ae8bd5a797544f11d7e89",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10464878541179581736700",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xe4ca5d58018ac3260c5d89374e985f97c9cc2eb6",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "243979100000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xe6df6ce7d10894de35bfb7f38407172ece977e50",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "200000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xe6e0239050264a1d7a7c0912831c921ffa5fbaed",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "25000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xe8256119a8621a6ba3c42e807b261840bde77944",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "61870000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xe837a9b2384143f76b2873c4af9c0303c0604b56",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "11000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xe96c3e1d842beccb10bf57c453b84bf75725241d",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "19213394620786333350600",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xe994fa00a24c1449aaebf3ab98d25f2d54ce769d",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "28118083967000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xeb27ae58d1980d4c5726409c88aa14e9dd733fc0",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "19500000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xec108de3bedaa40eaab66fc00c9a888d07c2691c",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xec64c08b2510748b7388b6cf8e1f63322a0b1710",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10070000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xed4517789f382ceaa9399b415cf78ba6c9adb412",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "50179602342997259256600",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xedf936914a71125202d2f47a89f50c06dfb5b1b3",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xee2bb8598725445b532bdb14f522a99e04e84b38",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10300000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xf0a8c1d8d70127ef2993fdc2e7e965580dca7827",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "1989659517251000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xf352db97c5a2ff55453745c195b806f50382ee06",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "11500000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xf370a9bd9e2e9a63a519b891557e17401219cda2",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xf3799e6e97a2768deb1a07be6eb2b109405812b6",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "15000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xf398ac61610105b9bbe4a14b013c9043d825d837",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10370000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xf3bd166dcd4c6bc8042183101aa0b0e583c81c21",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "1500000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xf5428da9ffedb50115c4b6788027e895411c7c3b",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xf83775c95a00612d4cac5053dd484ffa81bae0ad",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "80000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xf925fdaea552d36a5291335941ab7a046f960a80",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "4000000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xf9c82b33c87cfbbd1ba7fa521dbc02da31680f1a",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "30000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xfbd0ba9f09c4ed0adfa73734e9c9014a72958219",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "10100000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xfef39eb9db7708a84c1c672454510b8f709cc088",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "100000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xff5a9c561f3e66fd1c234f7bda763360f01c3f19",
+        "lockedBalance": "0"
+      },
+      {
+        "activeBalance": "12000000000000000000000",
+        "availableBalance": "0",
+        "deactivationBalance": "0",
+        "id": "0xffe271fc41ecce146e14e518561b6943fe056978",
+        "lockedBalance": "0"
+      }
+    ]
+  }
+}
